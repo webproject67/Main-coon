@@ -83,7 +83,7 @@
 	}
 
 	.page-header__desc {
-		padding: 57px 0 0 21.6%;   
+		padding: 57px 0 0 5.6%;   
 	}
 
 	.page-header__btn {
@@ -92,7 +92,7 @@
 
 	.page-header__list {
     display: flex;
-		padding: 56px 21.7% 22px;  
+		padding: 56px 5.4% 22px;  
 	}
 
 	.page-header__item {
@@ -115,15 +115,8 @@
 	}
 }
 
-@media (max-width: 900px) {
-	.page-header {
-		background: #181617 url("/img/main-coon-tablet@1x.png") no-repeat right -100px bottom 0;
-	}
-} 
-
 @media (max-width: $tablet-width) { 
 	.page-header {
-		min-width: 320px;
 		padding: 10px 0 277px;
 		background: #181617 url("/img/main-coon-mobile@1x.png") no-repeat right bottom;  
 	}

@@ -1,0 +1,172 @@
+.pets {
+  padding: 193px 0 51px;
+  text-align: center;
+}
+
+.pets__title {
+  margin-bottom: 0;
+  font-family: Yeseva One;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.pets__text {
+  width: 523px;
+  margin: 20px auto 42px; 
+  font-weight: 300;
+  line-height: 26px;
+  color: #A07B50;
+}
+
+.pets__button {
+  padding: 0 23px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.2);
+  border: none;
+  background-color: transparent;
+
+  &--active {
+    color: #FFFFFF;
+  } 
+}
+
+.pets__cats {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;   
+  padding-top: 43px;      
+  height: 39vw;           
+} 
+
+.pets__img {
+  width: 38%;
+  margin: 0 23px 0 7px;
+
+  &:last-child {
+    width: 35%;
+  }
+}
+
+.pets__btnArrow {
+  display: none;
+}
+
+.pets__btn {
+  margin-top: 53px;
+  padding: 17px 37px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  border: 0.5px solid #A07B50; 
+  background-color: transparent; 
+}
+
+@media (max-width: $desktop-width) { 
+  .pets {
+    position: relative;
+    padding: 69px 0;
+  }
+  
+  .pets__text {
+    margin: 20px auto 47px; 
+  }
+
+  .pets__btnArrow {
+    position: absolute;
+    top: 552px;
+    display: block;
+    background-color: transparent;
+    border: none;
+
+    &--left {
+      left: 3%;
+    }
+    
+    &--right {
+      right: 3%;
+    }
+  }
+  
+  .pets__arrow {
+    width: 14px;
+    height: 30px;
+
+    &--transform {
+      transform: rotate(180deg);
+    }
+  }
+
+  .pets__cats {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;   
+    margin: 0 9.2%;      
+    height: auto;   
+    overflow-x: hidden;        
+  } 
+
+  .pets__img {
+    width: auto;
+    margin: 0;
+
+    &:last-child {
+      order: -1;
+      width: auto;
+    }
+  }
+
+  .pets__btn {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: $tablet-width) { 
+  .pets {
+    padding: 26px 0;
+  }
+  
+  .pets__title {
+    font-size: 28px;
+  }
+
+  .pets__text {
+    width: 289px;
+    margin: 19px auto 30px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .pets__btnArrow {
+    top: 60%;
+
+    &--left {
+      left: 2.5%;
+    }
+    
+    &--right {
+      right: 2.5%;
+    }
+  }
+  
+  .pets__arrow {
+    width: 9px;
+    height: 20px;
+  }
+
+  .pets__cats {
+    margin: 0 13.4%;      
+  } 
+
+  .pets__btn {
+    margin-top: 45px;
+    padding: 11px 16px;
+    font-size: 12px;
+  }
+}
