@@ -13,7 +13,7 @@
 }
 
 .pets__text {
-  width: 523px;
+  width: 38%;
   margin: 20px auto 42px; 
   font-weight: 300;
   line-height: 26px;
@@ -27,7 +27,12 @@
   line-height: 21px;
   color: rgba(255, 255, 255, 0.2);
   border: none;
-  background-color: transparent;
+  background: transparent;
+	transition: all 0.4s ease; 
+
+  &:hover {
+    color: #FFFFFF;
+  } 
 
   &--active {
     color: #FFFFFF;
@@ -65,7 +70,12 @@
   line-height: 16px;
   color: #FFFFFF;
   border: 0.5px solid #A07B50; 
-  background-color: transparent; 
+  background: transparent; 
+	transition: all 0.4s ease; 
+
+  &:hover {
+		background: #A07B50;
+	}
 }
 
 @media (max-width: $desktop-width) { 
@@ -75,6 +85,7 @@
   }
   
   .pets__text {
+    width: 68%;
     margin: 20px auto 47px; 
   }
 
@@ -97,6 +108,12 @@
   .pets__arrow {
     width: 14px;
     height: 30px;
+    stroke: #A07B50;
+    transition: all 0.4s ease; 
+  
+    &:hover {
+      stroke: #ffffff;
+    }
 
     &--transform {
       transform: rotate(180deg);
@@ -137,7 +154,7 @@
   }
 
   .pets__text {
-    width: 289px;
+    width: 90%;
     margin: 19px auto 30px;
     font-size: 14px;
     line-height: 19px;

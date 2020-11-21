@@ -1,6 +1,11 @@
 .page-header {
 	padding: 31px 0 8px;
 	background: #181617 url("/img/main-coon-desktop@1x.png") no-repeat right bottom;
+
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+		background-image: url("/img/main-coon-desktop@2x.png");
+		background-size: 1019px auto;
+	}
 }
 
 .page-header__crown {
@@ -36,8 +41,13 @@
 	font-size: 14px;
 	line-height: 16px;
 	color: #ffffff;
-	background-color: transparent;
-	border: 0.5px solid #A07B50; 
+	background: transparent;
+	border: 0.5px solid #A07B50;
+	transition: all 0.4s ease; 
+
+	&:hover {
+		background: #A07B50;
+	}
 }
 
 .page-header__list {
@@ -61,6 +71,15 @@
 	}
 }
 
+.page-header__icon {
+	fill: #FFFFFF;
+	transition: all 0.4s ease; 
+
+	&:hover {
+		fill: #A07B50;
+	}
+}
+
 .page-header__icon--Vk {
 	width: 13px;
 	height: 8px;
@@ -80,6 +99,11 @@
   .page-header {
 		padding: 13px 0 8px;
 		background: #181617 url("/img/main-coon-tablet@1x.png") no-repeat right bottom;
+
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+			background-image: url("/img/main-coon-tablet@2x.png");
+			background-size: 651px auto;
+		}
 	}
 
 	.page-header__desc {
@@ -87,7 +111,7 @@
 	}
 
 	.page-header__btn {
-		margin-top: 40px;     
+		margin-top: 40px;   
 	}    
 
 	.page-header__list {
@@ -119,6 +143,11 @@
 	.page-header {
 		padding: 10px 0 277px;
 		background: #181617 url("/img/main-coon-mobile@1x.png") no-repeat right bottom;  
+
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+			background-image: url("/img/main-coon-mobile@2x.png");
+			background-size: 275px auto;
+		}
 	}
 
 	.page-header__crown {

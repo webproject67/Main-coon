@@ -15,7 +15,7 @@
 }
 
 .features__text {
-  width: 759px;
+  width: 54vw;
   margin: 0 auto;
   line-height: 26px;
   color: #A07B50;
@@ -58,6 +58,11 @@
     width: 623px;
     height: 908px;
     background: url("/img/cat-desktop@1x.png") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("/img/cat-desktop@2x.png");
+      background-size: 623px auto;
+    }
   }
 }
 
@@ -146,7 +151,7 @@
   }
 
   .features__text {
-    width: 514px;
+    width: 54vw;
   }
 
   .features__figures {
@@ -172,6 +177,11 @@
       width: 410px;
       height: 611px;
       background: url("/img/cat-tablet@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/cat-tablet@2x.png");
+        background-size: 410px auto;
+      }
     }
   }
 
@@ -235,14 +245,14 @@
   }
 
   .features__title {
-    width: 300px;
+    width: 85vw;
     margin: 26px auto 20px;
     font-size: 28px;
     line-height: 33px;
   }
 
   .features__text {
-    width: 272px;
+    width: 85vw;
     margin: 0 auto;
     line-height: 21px;
     font-size: 14px;
@@ -271,6 +281,11 @@
       width: 267px;
       height: 291px;
       background: url("/img/cat-mobile@1x.png") no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("/img/cat-mobile@2x.png");
+        background-size: 267px auto;
+      }
     }
   }
 
